@@ -26,7 +26,7 @@
 ## DB의 구성
  DB는 RDBMS인 MySQL을 사용하고 있습니다. 제공받은 데이터를 통해서 크게 5개의 테이블로 다음과 같이 구성하였습니다. 
  
-![ERR](./Programmers_err.png)
+![ERR](https://github.com/Gouwon/programmers_test/blob/master/Programmers_eer.png?raw=true)
 
  * **item** : 화장품의 기본 정보를 저장하는 테이블
  *  **ingredient** : 화장품들에 사용되는 성분들의 기본 정보를 저장하는 테이블
