@@ -35,7 +35,7 @@ def resonpse_in_json(f):
 
 # Create your views here.
 def index(request):
-    return render(request, 'programmers_test/index.html')
+    return render(request, 'templates/index.html')
 
 ## 잘못된 요청이나 서버의 처리 오류 등이 있을 때, json의 형식으로 결과를 처리하기 위한 view 함수
 @resonpse_in_json

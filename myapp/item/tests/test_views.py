@@ -18,7 +18,7 @@ class ItemViewTest(TestCase):
 "status": 404
 })
       response = self.client.get(
-          reverse('programmers_test:details', args=[17]) + '?skin_type=dry'
+          reverse('item:details', args=[17]) + '?skin_type=dry'
       )
       self.assertEqual(response.status_code, 200)
       self.assertJSONEqual(response.content, item_view_test_result)

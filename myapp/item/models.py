@@ -74,7 +74,7 @@ class Item(models.Model):
 
     def get_absolute_url(self):
         from . import views
-        return reverse('programmers_test:details', args=[str(self.id)])
+        return reverse('item:details', args=[str(self.id)])
 
     def make_imgURL(self, full=False):
         """

@@ -23,7 +23,7 @@ def get_json_data(FILE_LOCATION):
         yield result
 
 def insert_ingredient(apps, schema_editor):
-    Ingredient = apps.get_model('programmers_test', 'Ingredient')
+    Ingredient = apps.get_model('item', 'Ingredient')
     json_data = get_json_data(FILE_LOCATION)
     try:
         if len(json_data) == 0:
