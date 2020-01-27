@@ -34,10 +34,10 @@ def insert_ingredients(ingredients_list, Item):
             ignore_conflicts=True)
 
 def insert_item(apps, schema_editor):
-    Item = apps.get_model('programmers_test', 'Item')
-    Gender = apps.get_model('programmers_test', 'Gender')
-    Category = apps.get_model('programmers_test', 'Category')
-    Ingredient = apps.get_model('programmers_test', 'Ingredient')
+    Item = apps.get_model('item', 'Item')
+    Gender = apps.get_model('item', 'Gender')
+    Category = apps.get_model('item', 'Category')
+    Ingredient = apps.get_model('item', 'Ingredient')
 
     json_data = get_json_data(FILE_LOCATION)
 
