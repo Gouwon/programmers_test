@@ -1,5 +1,7 @@
 import os
+import sys
 from .base import *
+
 
 DATABASES = {
     'default': {
@@ -8,5 +10,8 @@ DATABASES = {
         'NAME': os.environ['MYSQL_DATABASE'],
         'USER': os.environ['MYSQL_USER'],
         'PASSWORD': os.environ['MYSQL_ROOT_PASSWORD'],
+        'OPTIONS': {
+            'charset': 'utf8',
+        }
     }
 }

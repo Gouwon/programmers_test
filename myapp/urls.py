@@ -14,10 +14,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import (path, re_path, include)
 from myapp.home import views
+from myapp.item import urls
+from myqpp.item.views import (error403, error404, error500)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'', views.index),
+    re_path(r'^product\/', include((urls.extra_patterns, 'item')), name='product'),
+    re_path(r'^products', include((urls.urlpatterns, 'item')), name='products'),
 ]
+
+# override default handler with jsonResponse
+handler403 = error403
+handler404 = error404
+handler500 = error500
