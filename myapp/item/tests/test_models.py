@@ -1,5 +1,5 @@
 from django.test import TestCase
-from item.models import (Gender, Category, Ingredient, Item)
+from myapp.item.models import (Gender, Category, Ingredient, Item)
 
 
 # Create your tests here.

@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 
-from item.views import (ItemView, ItemListView)
+from myapp.item.views import (ItemView, ItemListView)
 from .test_result_data.item_list_view_test_result import item_list_view_test_result
 from .test_result_data.item_view_test_result import item_view_test_result
 

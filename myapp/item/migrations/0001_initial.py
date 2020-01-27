@@ -26,9 +26,6 @@ def insert_ingredient(apps, schema_editor):
     Ingredient = apps.get_model('item', 'Ingredient')
     json_data = get_json_data(FILE_LOCATION)
     try:
-        if len(json_data) == 0:
-            raise Exception
-
         nutrient_point = {'O': 1, '': 0, 'X': -1}
 
         for data in json_data:
