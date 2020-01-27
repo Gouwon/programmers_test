@@ -4,7 +4,7 @@ DEBUG = True
 
 if(os.environ.get('MYSQL_ROOT_HOST', None) == None):
     FILE_NAME = 'export.sh'
-    os.system('source../../export.sh')
+    os.system('source ../../export.sh')
     print('\n\n\n os.environ >>>>> ', os.environ)
 
 # Database

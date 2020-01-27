@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import (path, re_path, include)
-from myapp.home import views
-from myapp.item import urls
-from myqpp.item.views import (error403, error404, error500)
+from .home import views
+from .item import urls
+from .item.views import (error403, error404, error500)
 
 
 urlpatterns = [
